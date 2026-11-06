@@ -1,38 +1,50 @@
-# ifield-music-lab
-iField Music Lab — an independent AI music creation studio. Create original songs, shape sound, build musical identities, and export projects with creator-first rights and transparent studio attribution.
-# iField Music Lab — MVP 01
+🎧 iField Music Lab
 
-## Що працює
-- Адаптивний інтерфейс для iPhone Safari.
-- Музичний бриф: жанр iField, темп, настрій, інструменти, дуетні голоси.
-- Створення Music DNA Prompt англійською для сумісних музичних моделей.
-- Локальне збереження до 30 проєктів у браузері.
-- Експорт паспорта композиції у TXT.
+Your Music. Your Universe.
 
-## Чого поки немає
-- Генерації аудіо: у цій версії немає підключеної моделі або бекенду.
-- Хмарної синхронізації / акаунтів.
-- Юридичної гарантії авторських прав на AI-аудіо.
+iField Music Lab is an independent AI music creation studio built around creativity, freedom and creator-first principles.
 
-## Запуск на iPhone
-1. Розмістити `index.html` на статичному хостингу HTTPS (наприклад, GitHub Pages).
-2. Відкрити адресу в Safari.
-3. Натиснути «Поділитися» → «На екран Домой» → «Добавить».
-4. Відкривати iField Music Lab з іконки на екрані.
+Our mission is to give creators tools to transform ideas into original musical experiences.
 
-## Наступний технічний етап
-1. Вибрати конкретну модель та перевірити окремо ліцензії коду, ваг, даних і вихідного аудіо.
-2. Створити тонкий API/backend-проксі, щоб не вбудовувати секретні ключі в HTML.
-3. Додати чергу задач, статус генерації, аудіоплеєр та завантаження WAV/MP3.
-4. Додати журнал походження: модель/версія/ліцензія/дата/авторський внесок.
-5. Тільки після перевірки ліцензії вмикати комерційний режим.
+✦ Vision
 
-## Архітектурне застереження
-«Власна студія» не означає, що модель уже наша. MVP є власним інтерфейсом і творчим workflow. Для справді власної моделі потрібні права на базову модель/ваги/дані, обчислювальні ресурси та окреме навчання або fine-tuning.
+* Original music creation
+* AI-assisted creative workflows
+* Unique musical identities
+* Male and female vocal experiences
+* Ukrainian music and global sound exploration
+* Creator-first rights and transparent attribution
 
+🚀 Project
 
-## User rights + studio branding
-- Product principle: users retain rights to their own creative contributions and outputs to the extent permitted by applicable law and third-party model/provider licenses.
-- iField Music Lab does not claim ownership merely because a user generated a track with the studio.
-- Exports include an iField Music Lab studio credit. Future track-cover exports should carry the studio logo as tool attribution, not as a claim of ownership.
-- Audio watermarking is not enabled: the studio credit should not alter the sound or imply a rights claim.
+The first MVP includes:
+
+* Music DNA prompt builder
+* Genre, mood and BPM configuration
+* Vocal and language selection
+* Custom instrumentation
+* Lyrics input
+* Project saving and loading
+* Project passport export
+
+🛠 Technology
+
+HTML · CSS · JavaScript · Responsive Web Design
+
+🌌 Creator First
+
+Your music. Your creative identity.
+
+iField Music Lab provides creative tools and studio attribution. It does not claim ownership of a user’s music merely because its tools were used.
+
+Rights and commercial permissions depend on applicable law and the terms of the selected AI model or provider.
+
+📍 Status
+
+MVP — In Development
+
+© iField Music Lab
+
+Independent creative technology by iField.
+
+Your Music. Your Rights. Our Creative Technology.
