@@ -1,0 +1,41 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="neon" x1="75" y1="70" x2="420" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#43E5FF"/>
+      <stop offset=".52" stop-color="#548BFF"/>
+      <stop offset="1" stop-color="#A879FF"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="150" y1="130" x2="370" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#43E5FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="20" y="20" width="472" height="472" rx="112" fill="#091426"/>
+  <rect x="21.5" y="21.5" width="469" height="469" rx="110.5" stroke="url(#neon)" stroke-width="3"/>
+
+  <path d="M256 65L419 160V352L256 447L93 352V160L256 65Z"
+        stroke="url(#neon)" stroke-width="7" opacity=".55"/>
+
+  <g filter="url(#glow)">
+    <path d="M155 160V350" stroke="url(#inner)" stroke-width="27" stroke-linecap="round"/>
+    <path d="M155 160H245" stroke="url(#inner)" stroke-width="27" stroke-linecap="round"/>
+    <path d="M155 255H224" stroke="url(#inner)" stroke-width="23" stroke-linecap="round"/>
+
+    <path d="M275 185V350" stroke="url(#neon)" stroke-width="25" stroke-linecap="round"/>
+    <path d="M275 185C275 185 300 158 337 180C370 199 357 240 357 240V350"
+          stroke="url(#neon)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="275" cy="125" r="12" fill="#43E5FF"/>
+  <circle cx="357" cy="150" r="7" fill="#A879FF"/>
+  <path d="M112 390H400" stroke="url(#neon)" stroke-width="3" opacity=".5"/>
+</svg>
