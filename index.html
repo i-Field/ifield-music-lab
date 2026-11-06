@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030a14">
+  <meta name="description" content="iField Music Lab — Your Music. Your Universe.">
+  <title>iField Music Lab</title>
+  <link rel="icon" href="assets/ifield-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#">
+    <img src="assets/ifield-mark.svg" alt="iField logo">
+    <span>iField <small>Music Lab</small></span>
+  </a>
+  <span class="status">CREATOR FIRST · MVP</span>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">INDEPENDENT CREATIVE TECHNOLOGY</p>
+      <h1>Your Music.<br><span>Your Universe.</span></h1>
+      <p class="hero-description">
+        Перетворюй ідеї на музику. Створюй власне звучання.
+        Відкривай нові музичні світи.
+      </p>
+      <a href="#studio" class="button primary">Відкрити студію →</a>
+    </div>
+  </section>
+
+  <section class="section" id="studio">
+    <div class="section-heading">
+      <p class="eyebrow">CREATE SOMETHING ORIGINAL</p>
+      <h2>Музична майстерня</h2>
+      <p>Створи концепцію свого наступного треку.</p>
+    </div>
+
+    <form id="musicForm" class="studio" onsubmit="return false">
+      <div class="form-grid">
+
+        <label>
+          Назва треку
+          <input id="title" type="text" placeholder="Між нами небо">
+        </label>
+
+        <label>
+          Жанр
+          <select id="genre">
+            <option>Ukrainian Deep House</option>
+            <option>Organic House</option>
+            <option>Dark Pop</option>
+            <option>Folk Fusion</option>
+            <option>Cinematic</option>
+            <option>Experimental</option>
+            <option>Reggae / Hip-Hop</option>
+          </select>
+        </label>
+
+        <label>
+          Настрій
+          <select id="mood">
+            <option>Emotional and uplifting</option>
+            <option>Dreamlike and atmospheric</option>
+            <option>Dark and powerful</option>
+            <option>Warm and intimate</option>
+            <option>Joyful and playful</option>
+          </select>
+        </label>
+
+        <label>
+          Темп · BPM
+          <input id="bpm" type="number" min="50" max="200" value="120">
+        </label>
+
+        <label>
+          Вокал
+          <select id="vocal">
+            <option>Male + Female duet</option>
+            <option>Female solo</option>
+            <option>Male solo</option>
+            <option>Instrumental</option>
+            <option>Choir</option>
+          </select>
+        </label>
+
+        <label>
+          Мова
+          <select id="language">
+            <option>Ukrainian</option>
+            <option>English</option>
+            <option>Ukrainian + English</option>
+            <option>Instrumental</option>
+          </select>
+        </label>
+
+        <label class="wide">
+          Інструменти та звучання
+          <input id="instruments" type="text"
+            placeholder="Бандура, трембіта, синтезатори...">
+        </label>
+
+        <label class="wide">
+          Ідея та сюжет
+          <textarea id="idea" rows="4"
+            placeholder="Про що твоя музика? Яку історію вона розповість?"></textarea>
+        </label>
+
+        <label class="wide">
+          Текст пісні (необов'язково)
+          <textarea id="lyrics" rows="5"
+            placeholder="Встав власний текст..."></textarea>
+        </label>
+
+      </div>
+
+      <div class="actions">
+        <button type="button" class="button primary" id="generate">
+          ✦ Створити Music DNA
+        </button>
+        <button type="button" class="button" id="save">Зберегти</button>
+        <button type="button" class="button" id="load">Завантажити</button>
+        <button type="reset" class="button">Очистити</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section" id="results" hidden>
+    <div class="section-heading">
+      <p class="eyebrow">YOUR CREATIVE BLUEPRINT</p>
+      <h2>Твій Music DNA</h2>
+    </div>
+
+    <div class="studio">
+      <pre id="promptOutput" class="output"></pre>
+      <div class="actions">
+        <button class="button primary" id="copy" type="button">
+          Копіювати промпт
+        </button>
+        <button class="button" id="export" type="button">
+          Експорт паспорта TXT
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="worlds">
+    <div class="section-heading">
+      <p class="eyebrow">EXPLORE YOUR SOUND</p>
+      <h2>Музичні світи iField</h2>
+    </div>
+
+    <div class="world-grid">
+      <article class="world"><h3>Organic Pulse</h3><p>Live textures · Deep groove</p></article>
+      <article class="world"><h3>Deep Emotion</h3><p>Atmosphere · Human voice</p></article>
+      <article class="world"><h3>Ukrainian Soul</h3><p>Roots · Modern folklore</p></article>
+      <article class="world"><h3>Cinematic Space</h3><p>Epic · Immersive</p></article>
+      <article class="world"><h3>Beyond Limits</h3><p>Experimental · New forms</p></article>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="notice">
+      <strong>CREATOR FIRST.</strong>
+      Твоя музика — твоя творчість. iField Music Lab надає
+      інструменти та студійний кредит, але не привласнює
+      авторство. Комерційні права залежать від законодавства
+      та ліцензії обраної AI-моделі.
+    </div>
+    <p class="muted">
+      Поточна версія створює музичні концепції та промпти.
+      Генерація аудіо буде додана на наступному етапі.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <span>© iField Music Lab</span>
+  <span>Your Music. Your Rights. Our Creative Technology.</span>
+</footer>
+
+<div id="toast" class="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
